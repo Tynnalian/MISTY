@@ -1,0 +1,9 @@
+[submodule "verifbuilder"]
+	path = verifbuilder
+	url = git@gitlab.borisblade.ru:serge06/verifbuilder.git
+[submodule "encryptionmemory"]
+	path = encryptionmemory
+	url = git@gitlab.borisblade.ru:Stepan/encryptionmemory.git
+[submodule "uvm_minimal_example"]
+	path = uvm_minimal_example
+	url = git@gitlab.borisblade.ru:study/uvm_minimal_example.git

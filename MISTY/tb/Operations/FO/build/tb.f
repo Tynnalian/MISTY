@@ -1,0 +1,9 @@
+../../../../../encryptionmemory/rtl/iterative/*.sv 
+../../../../python_models/pysv_pkg.sv
+../../../../../uvm_minimal_example/reset_agent/dv/uvm/reset_agent_pkg.sv
++indir+../../../../../uvm_minimal_example/reset_agent/dv/uvm/
+../uvm/FO_pkg.sv
++indir+../../../../tb/Operations/FO/uvm/
+../tb/FO_interface.sv
+../tb/reset_intf.sv
+../tb/FO_tb.sv

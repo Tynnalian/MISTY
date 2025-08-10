@@ -1,0 +1,17 @@
+- test: base_test
+  description: >
+    Simple hello world test.
+  iterations: 1
+  sim_opts:
+  comp_opts:
+  cov_opts:
+  rtl_test: hello_world_test
+
+- test: custom_test
+  description: >
+    Custom hello world test.
+  iterations: 1
+  sim_opts: +my_string=My_Hello_World!
+  comp_opts: +define+PRINT_MY_STRING
+  cov_opts:
+  rtl_test: hello_world_test

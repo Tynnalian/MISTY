@@ -1,0 +1,48 @@
+- test: test_base
+  description: >
+    Usual base test.
+  iterations: 1
+  sim_opts: 
+  comp_opts: 
+  cov_opts:
+  rtl_test: misty_test_pipe
+
+- test: test_reset
+  description: >
+    Usual base test with 5 resets in row.
+  iterations: 1
+  sim_opts:  
+  comp_opts: 
+  cov_opts:
+  rtl_test: misty_test_pipe_reset
+
+
+- test: test_sc
+  description: >
+    self_check test.
+  iterations: 1
+  sim_opts:  
+  comp_opts: 
+  cov_opts:
+  rtl_test: misty_test_pipe_sc
+
+
+- test: test_stall
+  description: >
+    test with stall_driver.
+  iterations: 1
+  sim_opts:  
+  comp_opts: 
+  cov_opts:
+  rtl_test: misty_test_stall
+
+- test: test_valid_stall
+  description: >
+    test with valid_stall.
+  iterations: 1
+  sim_opts:  
+  comp_opts: 
+  cov_opts:
+  rtl_test: misty_test_stall_valid  
+
+

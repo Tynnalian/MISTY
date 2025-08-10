@@ -1,0 +1,17 @@
+- test: test_base
+  description: >
+    Usual base test.
+  iterations: 1
+  sim_opts: 
+  comp_opts: 
+  cov_opts:
+  rtl_test: FI_test_base
+
+- test: test_reset
+  description: >
+    Usual base test with reset.
+  iterations: 1
+  sim_opts:  
+  comp_opts: 
+  cov_opts:
+  rtl_test: FI_test_reset 

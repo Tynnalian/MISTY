@@ -1,0 +1,13 @@
+../../../../../encryptionmemory/rtl/pipelined_v2/*.sv 
+            ../../../../python_models/pysv_pkg.sv
+            ../../../../../uvm_minimal_example/reset_agent/dv/uvm/reset_agent_pkg.sv
+            +indir+../../../../../uvm_minimal_example/reset_agent/dv/uvm/
+            ../../../MISTY_iterative/Randomizing_part/uvm/misty/misty_pkg.sv
+            +indir+../../../../tb/MISTY_iterative/Randomizing_part/uvm/misty/
+            ../../../MISTY_iterative/MISTY_TOP/uvm/misty_top_pkg.sv
+            +indir+../../../../tb/MISTY_iterative/MISTY_TOP/uvm/
+            ../../Pipeline_v1/uvm/misty_pipe_pkg.sv
+            +indir+../../../../tb/MISTY_pipeline/Pipeline_v1/uvm/
+            ../../../MISTY_iterative/Randomizing_part/tb/misty_interface.sv
+            ../../../MISTY_iterative/Randomizing_part/tb/reset_intf.sv
+            ../tb/misty_pipe_tb.sv

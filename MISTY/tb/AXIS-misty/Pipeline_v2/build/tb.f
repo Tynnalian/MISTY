@@ -1,0 +1,23 @@
+../../../../../encryptionmemory/rtl/pipelined_v2/*.sv 
+            ../../../../python_models/pysv_pkg.sv
+            /local/tools/mentor/QUESTA_VERIFICATION_IP/2020.4_1/include/questa_mvc_svapi.sv
+            /local/tools/mentor/QUESTA_VERIFICATION_IP/2020.4_1/questa_mvc_src/sv/mvc_pkg.sv
+            +incdir+/local/tools/mentor/QUESTA_VERIFICATION_IP/2020.4_1/questa_mvc_src/sv
+            /local/tools/mentor/QUESTA_VERIFICATION_IP/2020.4_1/questa_mvc_src/sv/axi4stream/mgc_axi4stream_v1_0_pkg.sv
+            +incdir+/local/tools/mentor/QUESTA_VERIFICATION_IP/2020.4_1/questa_mvc_src/sv/axi4stream
+            /local/tools/mentor/QUESTA_VERIFICATION_IP/2020.4_1/questa_mvc_src/sv/axi4stream/modules/axi4stream_master.sv
+            /local/tools/mentor/QUESTA_VERIFICATION_IP/2020.4_1/questa_mvc_src/sv/axi4stream/modules/axi4stream_slave.sv
+            ../../../../../uvm_minimal_example/reset_agent/dv/uvm/reset_agent_pkg.sv
+            +indir+../../../../../uvm_minimal_example/reset_agent/dv/uvm/
+            ../../../MISTY_iterative/Randomizing_part/uvm/misty/misty_pkg.sv
+            +indir+../../../../tb/MISTY_iterative/Randomizing_part/uvm/misty/
+            ../../../MISTY_iterative/MISTY_TOP/uvm/misty_top_pkg.sv
+            +indir+../../../../tb/MISTY_iterative/MISTY_TOP/uvm/
+            ../../Pipeline/uvm/axis_misty_params_pkg.sv
+            ../../Iterative/uvm/axis_misty_pkg.sv
+            +indir+../../Iterative/uvm/
+            ../../Pipeline/uvm/axis_misty_pipe_pkg.sv
+            +indir+../uvm/
+            ../../../MISTY_iterative/Randomizing_part/tb/misty_interface.sv
+            ../../../MISTY_iterative/Randomizing_part/tb/reset_intf.sv
+            ../tb/misty_axis_tb.sv

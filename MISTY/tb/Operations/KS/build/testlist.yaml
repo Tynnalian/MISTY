@@ -1,0 +1,19 @@
+- test: test_base
+  description: >
+    Usual base test for KS.
+  iterations: 1
+  sim_opts:  
+  comp_opts: 
+  cov_opts:
+  rtl_test: KS_test_base
+
+- test: test_reset
+  description: >
+    Usual base test with reset test.
+  iterations: 1
+  sim_opts:  
+  comp_opts:  
+  cov_opts:
+  rtl_test: KS_test_reset
+
+ 

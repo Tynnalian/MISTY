@@ -1,0 +1,9 @@
+../../../../../encryptionmemory/rtl/iterative/* 
+../../../../python_models/pysv_pkg.sv
+../../../../../uvm_minimal_example/reset_agent/dv/uvm/reset_agent_pkg.sv
++indir+../../../../../uvm_minimal_example/reset_agent/dv/uvm/
+../uvm/KS_pkg.sv
++indir+../../../../tb/Operations/KS/uvm/
+../tb/KS_interface.sv
+../tb/reset_intf.sv
+../tb/KS_tb.sv

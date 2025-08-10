@@ -1,0 +1,7 @@
+MISTY/tb/*/*/build/*
+MISTY/python_models/work
+MISTY/python_models/build
+!MISTY/tb/*/*/*/Makefile
+!MISTY/tb/*/*/*/rtl_simulation.yaml
+!MISTY/tb/*/*/*/testlist.yaml
+!MISTY/tb/*/*/*/tb.f

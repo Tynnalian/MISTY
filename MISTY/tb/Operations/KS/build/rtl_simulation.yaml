@@ -1,0 +1,35 @@
+- tool: questa
+  compile:
+    cmd:
+      - 'vmap mtiUvm /tools/tools_old/mentor/QUESTA/10.7f/questasim/uvm-1.2'
+      - 'vlib <cmp_dir>/work'
+      - 'vlog -f tb.f
+              -64
+              -work <cmp_dir>/work
+              -sv
+              +define+UVM_REGEX_NO_DPI
+              +define+UVM
+              -l <cmp_dir>/compile.log'
+  sim:
+    cmd:
+      # Allow Questa to use the same library
+      # for the each iteration. If we not
+      # copy - parallel run will be serial
+      # because of _lock files.
+      - 'cp -r <cmp_dir>/work <sim_dir>'
+      - 'vsim KS_tb
+              -sv_lib ../../../../python_models/build/build/libpysv
+              <sim_opts>
+              -64
+              <mode>
+              -work <sim_dir>/work
+              -coverage -voptargs="+acc +cover=bcesfx+/KS_tb/DUT+0" 
+              -do "coverage save -testname <rtl_test>_<seed> -onexit <cmp_dir>_<seed>.ucdb;"
+              -do "add wave KS_tb/intf/*; run -all" 
+              -sv_seed <seed>
+              +UVM_TESTNAME=<rtl_test>
+              +UVM_VERBOSITY=UVM_LOW
+              -l <sim_dir>/sim.log'
+    gui: -gui
+    batch: -c
+

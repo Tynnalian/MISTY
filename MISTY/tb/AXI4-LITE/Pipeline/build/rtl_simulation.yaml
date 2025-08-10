@@ -1,0 +1,38 @@
+- tool: questa
+  compile:
+    cmd:
+      - 'vmap mtiUvm /tools/tools_old/mentor/QUESTA/10.7f/questasim/uvm-1.2'
+      - 'vlib <cmp_dir>/work'
+      - 'vlog  -f tb.f
+              -64
+              -work <cmp_dir>/work
+              -sv
+              +define+UVM_REGEX_NO_DPI
+              +define+UVM
+              +define+GPIO_INTF_DATA_WIDTH=1
+              -l <cmp_dir>/compile.log
+              +incdir+/local/tools/mentor/QUESTA_VERIFICATION_IP/2020.4_1/questa_mvc_src/sv
+              +incdir+/local/tools/mentor/QUESTA_VERIFICATION_IP/2020.4_1/questa_mvc_src/sv/axi4
+              +incdir+/local/tools/mentor/QUESTA_VERIFICATION_IP/2020.4_1/questa_mvc_src/sv/axi4/shared
+              +incdir+../../../AXIS-misty/Iterative/uvm/'
+  sim:
+    cmd:
+      # Allow Questa to use the same library
+      # for the each iteration. If we not
+      # copy - parallel run will be serial
+      # because of _lock files.
+      - 'cp -r <cmp_dir>/work <sim_dir>'
+      - 'vsim misty_axi4lite_tb
+              -sv_lib ../../../../python_models/build/build/libpysv
+              -64
+              <mode>
+              -work <sim_dir>/work
+              -coverage -voptargs="+acc +cover=bcesfx+/misty_axi4lite_tb/DUT+0"
+              -do "coverage save -testname <rtl_test>_<seed> -onexit <cmp_dir>_<seed>.ucdb;" 
+              -do "add wave misty_axi4lite_tb/*; run -all"
+              -sv_seed <seed>
+              +UVM_TESTNAME=<rtl_test>
+              +UVM_VERBOSITY=UVM_DEBUG
+              -l <sim_dir>/sim.log'
+    gui: -gui
+    batch: -c

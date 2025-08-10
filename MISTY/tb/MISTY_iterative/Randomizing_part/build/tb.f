@@ -1,0 +1,13 @@
+../../../../../encryptionmemory/rtl/iterative/*.sv 
+            ../../../../python_models/pysv_pkg.sv
+            ../../../../../uvm_minimal_example/reset_agent/dv/uvm/reset_agent_pkg.sv
+            +indir+../../../../../uvm_minimal_example/reset_agent/dv/uvm/
+            ../../../Operations/KS/uvm/KS_pkg.sv
+            +indir+../../../../tb/Operations/KS/uvm/
+            ../uvm/misty/misty_pkg.sv
+            +indir+../../../../tb/MISTY_iterative/Randomizing_part/uvm/misty/
+            ../uvm/misty_passthru_pkg.sv
+            +indir+../../../../tb/MISTY_iterative/Randomizing_part/uvm/
+            ../tb/misty_interface.sv
+            ../tb/reset_intf.sv
+            ../tb/misty_tb.sv

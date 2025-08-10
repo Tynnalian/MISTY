@@ -1,0 +1,1 @@
+run -a; if [batch_mode] {exit -force};

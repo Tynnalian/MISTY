@@ -1,0 +1,20 @@
+- test: test_base
+  description: >
+    Usual base test for axis_iterative.
+  iterations: 1
+  sim_opts:
+  comp_opts: 
+  cov_opts:
+  rtl_test: axis_misty_test_base
+
+- test: test_reset
+  description: >
+    Usual base test with 5 reset in row for axis_iterative.
+  iterations: 1
+  sim_opts:  
+  comp_opts: 
+  cov_opts:
+  rtl_test: axis_misty_test_reset
+
+
+

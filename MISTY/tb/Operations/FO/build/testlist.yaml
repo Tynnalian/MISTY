@@ -1,0 +1,18 @@
+- test: test_base
+  description: >
+    Usual base test for operation FO.
+  iterations: 1
+  sim_opts:  
+  comp_opts: 
+  cov_opts:
+  rtl_test: FO_test_base
+
+- test: test_reset
+  description: >
+    Usual base test with reset in the middle.
+  iterations: 1
+  sim_opts:  
+  comp_opts: 
+  cov_opts:
+  rtl_test: FO_test_reset
+

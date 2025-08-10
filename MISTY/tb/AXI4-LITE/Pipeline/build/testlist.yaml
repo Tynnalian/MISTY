@@ -1,0 +1,8 @@
+- test: test_base
+  description: >
+    Usual base test for axis_iterative.
+  iterations: 1
+  sim_opts:
+  comp_opts: 
+  cov_opts:
+  rtl_test: axi4lite_misty_test_base
